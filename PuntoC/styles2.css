@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #d2d2d2;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor{
+    width: 80%;
+    height: 80vh;
+    background-color: #222;
+    margin: 0 auto;
+}
+
+.plantilla{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(35, 1fr);
+    grid-template-areas:
+    "encabezado encabezado encabezado encabezado encabezado encabezado encabezado encabezado encabezado encabezado"
+    "encabezado encabezado encabezado encabezado encabezado encabezado encabezado encabezado encabezado encabezado"
+    "encabezado encabezado encabezado encabezado encabezado encabezado encabezado encabezado encabezado encabezado"
+    "encabezado encabezado encabezado encabezado encabezado encabezado encabezado encabezado encabezado encabezado"
+    "encabezado encabezado encabezado encabezado encabezado encabezado encabezado encabezado encabezado encabezado"
+    "lateral lateral main main main main main main noticias noticias"
+    "lateral lateral main main main main main main noticias noticias"
+    "lateral lateral main main main main main main noticias noticias"
+    "lateral lateral main main main main main main noticias noticias"
+    "lateral lateral main main main main main main noticias noticias"
+    "lateral lateral main main main main main main noticias noticias"
+    "lateral lateral main main main main main main noticias noticias"
+    "lateral lateral main main main main main main noticias noticias"
+    "lateral lateral main main main main main main noticias noticias"
+    "lateral lateral main main main main main main noticias noticias"
+    "lateral lateral main main main main main main noticias noticias"
+    "lateral lateral main main main main main main noticias noticias"
+    "lateral lateral main main main main main main noticias noticias"
+    "lateral lateral main main main main main main noticias noticias"
+    "lateral lateral main main main main main main noticias noticias"
+    "lateral lateral main main main main main main noticias noticias"
+    "lateral lateral main main main main main main noticias noticias"
+    "lateral lateral main main main main main main noticias noticias"
+    "lateral lateral main main main main main main noticias noticias"
+    "lateral lateral main main main main main main noticias noticias"
+    "lateral lateral main main main main main main noticias noticias"
+    "lateral lateral main main main main main main noticias noticias"
+    "lateral lateral main main main main main main noticias noticias"
+    "lateral lateral main main main main main main noticias noticias"
+    "final final final final final final final final final final"
+    "final final final final final final final final final final"
+    "final final final final final final final final final final"
+    "final final final final final final final final final final"
+    "final final final final final final final final final final"
+    "final final final final final final final final final final"
+    
+;
+}
+
+header{
+    grid-area: encabezado;
+    background-color: gainsboro;
+    text-align: center;
+}
+
+nav{
+     grid-area: lateral ;
+     background-color: bisque;
+     text-align: center;
+}
+
+main{
+    grid-area: main;
+    background-color: pink;
+    text-align: center;
+}
+
+aside{
+    grid-area: noticias;
+    background-color: skyblue;
+    text-align: center;
+}
+
+footer{
+    grid-area: final;
+    background-color: violet;
+    text-align: center;
+}
